@@ -13,8 +13,8 @@ strategy:
       python.version: '2.7'
     mac:
       imageName: "macos-10.14"
-      Python27:
-        python.version: '3.5'
+
+      python.version: '3.5'
 
     windows:
       imageName: "vs2017-win2016"
