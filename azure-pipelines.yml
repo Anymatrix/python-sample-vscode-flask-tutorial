@@ -15,12 +15,8 @@ strategy:
     windows:
       imageName: "vs2017-win2016"
   maxParallel: 3
-
-pool:
-  vmImage: $(imageName)
-
-strategy:
-  matrix:
+  
+    matrix:
     Python27:
       python.version: '2.7'
     Python35:
@@ -29,6 +25,10 @@ strategy:
       python.version: '3.6'
     Python37:
       python.version: '3.7'
+  
+
+pool:
+  vmImage: $(imageName)
 
 steps:
 - task: UsePythonVersion@0
